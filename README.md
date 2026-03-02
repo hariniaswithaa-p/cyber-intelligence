@@ -8,7 +8,7 @@
   <a href="https://www.linkedin.com/in/hariniaswithap">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
   </a>
-  <a href="https://github.com/hariniaswithaa-p/CyberSecurity-Portfolio">
+  <a href="https://github.com/hariniaswithaa-p/cyber-intelligence.git">
     <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
   </a>
   <a href="mailto:hariniaswithaa@gmail.com">
