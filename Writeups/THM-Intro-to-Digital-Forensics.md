@@ -78,7 +78,7 @@ pdfinfo ransom-letter.pdf
 
 **Screenshot:**
 
-![pdfinfo output](screenshots/Screenshot_1.png)
+![pdfinfo output](images/Screenshot_1.png)
 
 **Results extracted:**
 
@@ -107,7 +107,7 @@ exiftool ransom-letter.pdf
 
 **Screenshot:**
 
-![exiftool PDF output](screenshots/Screenshot_2.png)
+![exiftool PDF output](images/Screenshot_2.png)
 
 **Additional data from exiftool:**
 
@@ -138,7 +138,7 @@ exiftool letter-image.jpg | grep -i gps
 
 **Screenshot:**
 
-![GPS extraction](screenshots/Screenshot_4.png)
+![GPS extraction](images/Screenshot_4.png)
 
 **Results:**
 
@@ -159,7 +159,7 @@ To search on Google Maps, replace `deg` with `°` and remove extra spaces:
 
 **Screenshot:**
 
-![Google Maps result](screenshots/Screenshot_5.png)
+![Google Maps result](images/Screenshot_5.png)
 
 **Result: Milk Street, London EC2V 6DN, UK** ✅
 
@@ -174,7 +174,7 @@ exiftool letter-image.jpg | grep -i camera
 
 **Screenshot:**
 
-![Camera model](screenshots/Screenshot_7.png)
+![Camera model](images/Screenshot_7.png)
 
 **Result: Canon EOS R6** ✅
 
@@ -192,7 +192,7 @@ exiftool letter-image.jpg | grep -i camera
 
 ## Room Completion
 
-![Room Completed](screenshots/Screenshot_9.png)
+![Room Completed](images/Screenshot_9.png)
 
 **Room completed at 100%! 🎉**  
 40 points earned | 3 tasks completed
