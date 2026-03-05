@@ -20,7 +20,7 @@ to extract artifacts from Jo's laptop disk image.
 - ✅ Set original evidence files to Read-Only
 - ✅ Generated SHA256 and MD5 hashes for both E01 segments via PowerShell
 - ✅ Verified all tool versions
-- ✅ Created Autopsy case: M57-JoInvestigation
+- ✅ Created Autopsy case: M57-jo-investigation
 - ✅ Loaded E01 data source into Autopsy
 - ✅ Ran all ingest modules — ingest completed fully
 - ✅ Recorded OS information and final artifact counts
