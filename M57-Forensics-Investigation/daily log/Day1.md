@@ -83,7 +83,7 @@ Created a new case with the following configuration:
 | Note | Second segment auto-detected by Autopsy |
 
 ![Autopsy Case Creation](../images/day01-autopsy-case.png)
-![Data Source Loaded](../screenshots/day01-datasource.png)
+![Data Source Loaded](../images/day01-datasource.png)
 
 ---
 
