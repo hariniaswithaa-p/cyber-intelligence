@@ -23,8 +23,6 @@ to extract artifacts from Jo's laptop disk image.
 - ✅ Created Autopsy case: M57-jo-investigation
 - ✅ Loaded E01 data source into Autopsy
 - ✅ Ran all ingest modules — ingest completed fully
-- ✅ Recorded OS information and final artifact counts
-
 ---
 
 ## Evidence Details
