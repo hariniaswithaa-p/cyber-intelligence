@@ -38,7 +38,7 @@ to extract artifacts from Jo's laptop disk image.
 | Source | https://digitalcorpora.org/ |
 | Original Path | D:\Forensics\M57\Evidence\ |
 | Working Copy Path | D:\Forensics\M57\working-copy\ |
-| Autopsy Case Name | M57-JoInvestigation |
+| Autopsy Case Name | M57-jo-investigation |
 | Device ID | fe9f692e-268a-4166-b4a3-5d91cc334cd2 |
 
 ---
