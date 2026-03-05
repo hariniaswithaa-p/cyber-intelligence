@@ -6,7 +6,7 @@
 15-day forensic investigation of the M57 insider threat case (Jo's laptop).  
 Tools: Autopsy · Wireshark · Volatility · Kali Linux
 
-📁 [View Project](./M57-Forensics-Investigation/)  
+📁[View Project](./M57-Forensics-Investigation/README.md) 
 📅 Status: In Progress — Day 2 of 15
 
 ---
