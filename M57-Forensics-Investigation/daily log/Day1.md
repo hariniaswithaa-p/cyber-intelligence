@@ -19,9 +19,9 @@
 | jo-2009-12-11-002.E01 | MD5 | 1F109F9A92530812AB5E5C2465FC1942 |
 
 ## Screenshots
-![Hash Verification](../screenshots/day01-hash-verify.png)
-![Autopsy Case Setup](../screenshots/day01-autopsy-case.png)
-![Data Source Loaded](../screenshots/day01-datasource.png)
+![Hash Verification](../images/day01-hash-verify.png)
+![Autopsy Case Setup](../images/day01-autopsy-case.png)
+![Data Source Loaded](../images/day01-datasource.png)
 
 ## Key Learning
 The golden rule of forensics — never touch the original evidence.  
