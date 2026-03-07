@@ -24,7 +24,7 @@ At first glance, the PDF contained nothing but garbled nonsense — the visible 
 
 Using an **online PDF metadata viewer**, I inspected the file's properties. Buried in the metadata fields was a suspicious value in the **Author** field — a string of scrambled letters and numbers that looked like Base64-encoded text.
 
-> 📸 [Screenshot: PDF metadata viewer showing the encoded Author field](..images/metadata.png/)
+> 📸 [Screenshot: PDF metadata viewer showing the encoded Author field](/..images/metadata.png/)
 
 ---
 
@@ -38,7 +38,7 @@ echo "[base64_value]" | base64 --decode
 
 This revealed the flag.
 
-> 📸 [Screenshot: Web shell output showing the decoded flag](..images/webshell.png/)
+> 📸 [Screenshot: Web shell output showing the decoded flag](/..images/webshell.png/)
 
 ---
 
