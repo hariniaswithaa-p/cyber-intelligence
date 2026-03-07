@@ -38,7 +38,7 @@ echo "[base64_value]" | base64 --decode
 
 This revealed the flag.
 
-> 📸 [Screenshot: Web shell output showing the decoded flag](../images/webshell op.png)
+> 📸 [Screenshot: Web shell output showing the decoded flag](../images/webshell.png)
 
 ---
 
