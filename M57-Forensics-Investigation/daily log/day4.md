@@ -29,7 +29,7 @@ Glad I did — a few things from Day 2 that confused me finally make sense now.
 - Slowing down to understand the tool is better than rushing through artifacts you 
   can't properly explain
 - Shell Bags are more useful than I initially gave them credit for — going to look at 
-  those properly on Day 7
+  those properly.
 
 ---
 
