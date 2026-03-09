@@ -1,6 +1,7 @@
 # picoCTF – Hidden in Plainsight
 
-**Category:** Forensics 
+**Category:** Forensics
+
 **Difficulty:** Easy
 
 ---
