@@ -16,8 +16,7 @@ The SOC team discovered a suspiciously large log file after a recent breach. Whe
 
 Opening `logs.txt` was immediately suspicious. The whole file was just a massive wall of jumbled characters. But the structure of it gave it away pretty quickly — it was Base64. The challenge even hinted at it: decode the Base64 and generate an image.
 
-> 📸 *[Screenshot 1: logs.txt showing the encoded content]*
-
+![log file](../images/logtxt.png) 
 ---
 
 ## Decoding the file
@@ -30,7 +29,7 @@ cat logs.txt | base64 --decode > log.jpg
 
 That turned the "log file" into an actual jpg image. So it was never a log file to begin with — just an image disguised as one.
 
-> 📸 *[Screenshot 2: decoding base64 to image]*
+![command](../images/command.png)
 
 ---
 
@@ -41,6 +40,7 @@ The image wasn't clean. At the bottom there were some jumbled letters sitting th
 ```
 7069636F4354467B666F72656E736963735F616E616C797369735F69735F616D617A696E675F62653836303237397D
 ```
+![op image](..images/log.jpg)
 
 ---
 
@@ -50,7 +50,7 @@ I threw it into **CyberChef** using the "From Hex" operation and it decoded stra
 
 I actually got to know about CyberChef from a previous picoCTF challenge, and it's been useful ever since.
 
-> 📸 *[Screenshot 3: decoding the text in the image]*
+![cyberchef](../images/cyberchef.png)
 
 ---
 
