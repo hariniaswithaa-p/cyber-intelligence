@@ -10,7 +10,3 @@ Tools: Autopsy · Wireshark · Volatility · Kali Linux
 
 ---
 
-### 🚩 TryHackMe Writeups
-Room walkthroughs and CTF solutions.
-
-📁 [View Writeups](../Writeups/THM-Intro-to-Digital-Forensics.md)
