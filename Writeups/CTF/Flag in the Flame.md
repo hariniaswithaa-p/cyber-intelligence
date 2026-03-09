@@ -1,6 +1,8 @@
 # picoCTF – Flag in Flame
 
-**Category:** Forensics | **Difficulty:** Easy
+**Category:** Forensics
+
+**Difficulty:** Easy
 
 ---
 
