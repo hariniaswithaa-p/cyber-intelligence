@@ -57,7 +57,7 @@ Using a fake delivery failure subject is social engineering — it looks like a 
 message, more likely to be opened, less likely to get flagged. The email was blocked 
 because it contained `auto__mail.python.bat`, a `.bat` executable script.
 
-![Figure 1 — Email Messages in Autopsy](../images/day5-emailloc.png)
+![Figure 1 — Email Messages in Autopsy](../images/day5-mailloc.png)
 
 ---
 
