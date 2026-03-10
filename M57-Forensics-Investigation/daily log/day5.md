@@ -57,7 +57,7 @@ Using a fake delivery failure subject is social engineering — it looks like a 
 message, more likely to be opened, less likely to get flagged. The email was blocked 
 because it contained `auto__mail.python.bat`, a `.bat` executable script.
 
-![Figure 1 — Email Messages in Autopsy](../images/day05-email-messages.png)
+![Figure 1 — Email Messages in Autopsy](../images/day5-emailloc.png)
 
 ---
 
@@ -76,8 +76,6 @@ storage path. Normal locations would be under `AppData/Thunderbird/Profiles/` or
 `Local Settings/Application Data/`. Putting it here was deliberate — it blends in 
 with system files.
 
-![Figure 2 — Attachment location via keyword search](../images/day05-mail-location.png)
-
 **Attachment metadata — completely wiped:**
 
 | | |
@@ -93,7 +91,7 @@ one is the delivery failure report from the California DOT spam server, listing 
 25 blocked recipients with `550 5.7.1 BANNED: auto__mail.python.bat` for each one. 
 This confirms the email reached the spam filter for all 25 targets before being rejected.
 
-![Figure 3 — Attachment metadata wiped](../images/day05-attachment-meta.png)
+![Figure 2 — Attachment location via keyword search](../images/day5-attachmentmeta.png)
 
 ---
 
@@ -102,7 +100,7 @@ This confirms the email reached the spam filter for all 25 targets before being 
 Extracted `attachment1696078057` and opened in Notepad. The full email headers 
 revealed what was actually going on:
 
-![Figure 4 — Attachment content in Notepad](../images/day05-attachment-data.png)
+![Figure 4 — Attachment content in Notepad](../images/day5-attachmentdata.png)
 
 **Breaking it down:**
 
@@ -137,9 +135,3 @@ throw off the timeline.
   it was planned
 
 ---
-
-## Next Steps (Day 6)
-- Go through extension mismatch files — filter Jo's 11 files and examine what's inside
-- Check USB Devices Attached — 2 flash drives connected close to the incident date
-- Add `kgsav.org`, `ppp-70-242-162-63.dsl.spfdmo.swbell.net` and 
-  `auto__mail.python.bat` to the IOC list
