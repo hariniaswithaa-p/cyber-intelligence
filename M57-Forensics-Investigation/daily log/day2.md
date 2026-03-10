@@ -192,9 +192,3 @@ event logs and network traffic later on.
 
 ---
 
-## Next Steps (Day 3)
-- Go through the 85 extension mismatch files and see what documents are actually inside
-- Look at sc10.bin.tmp in the Hex tab — see if anything readable is in there
-- Check the 2 email messages
-- Go through USB Devices Attached (10 devices is a lot for one laptop)
-- Start the Suspicious Files Table with proper UTC timestamps
