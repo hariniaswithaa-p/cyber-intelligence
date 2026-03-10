@@ -40,7 +40,7 @@ The image wasn't clean. At the bottom there were some jumbled letters sitting th
 ```
 7069636F4354467B666F72656E736963735F616E616C797369735F69735F616D617A696E675F62653836303237397D
 ```
-![op image](..images/log.jpg)
+![op image](../images/log.jpg)
 
 ---
 
