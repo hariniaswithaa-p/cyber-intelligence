@@ -31,6 +31,3 @@ Glad I did — a few things from Day 2 that confused me finally make sense now.
 
 ---
 
-## Next Steps (Day 5)
-- Back into the investigation — browser history, email artifacts, web downloads
-- Keep the sc10.bin.tmp and Shell Bags findings in mind going forward
