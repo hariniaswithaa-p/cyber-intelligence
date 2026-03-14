@@ -191,11 +191,3 @@ event logs and network traffic later on.
   get explained away by Day 6 once the event logs are in
 
 ---
-
-## Next Steps (Day 3)
-- Start building the Suspicious Files Table with proper UTC timestamps
-- Look at sc10.bin.tmp in the Hex tab — see if anything readable is in there
-- Browse Jo's Desktop, My Documents, and Downloads folders in detail
-- Check Installed Programs for anything unusual
-- Extension mismatches and USB devices will be covered in Day 6
-- Email artifacts will be covered in Day 4 and 5
