@@ -57,8 +57,6 @@ Using a fake delivery failure subject is social engineering — it looks like a 
 message, more likely to be opened, less likely to get flagged. The email was blocked 
 because it contained `auto__mail.python.bat`, a `.bat` executable script.
 
-![Figure 1 — Email Messages in Autopsy](../images/day5-mailloc.png)
-
 ---
 
 ## Finding the Attachment
@@ -72,9 +70,11 @@ a keyword search for `Delivery_failure_notice` in Autopsy.
 ```
 
 That's inside Python's library test data folder — not anywhere near a normal email 
-storage path. Normal locations would be under `AppData/Thunderbird/Profiles/` or 
-`Local Settings/Application Data/`. Putting it here was deliberate — it blends in 
+storage path. Normal locations on Windows XP would be under `Local Settings\Application Data\` or 
+`Documents and Settings\Jo\Application Data\`. Putting it here was deliberate — it blends in 
 with system files.
+
+![Figure 2 — Attachment location via keyword search](../images/day5-mailloc.png)
 
 **Attachment metadata — completely wiped:**
 
@@ -91,7 +91,7 @@ one is the delivery failure report from the California DOT spam server, listing 
 25 blocked recipients with `550 5.7.1 BANNED: auto__mail.python.bat` for each one. 
 This confirms the email reached the spam filter for all 25 targets before being rejected.
 
-![Figure 2 — Attachment location via keyword search](../images/day5-attachmentmeta.png)
+![Figure 3 — Attachment metadata wiped](../images/day5-attachmentmeta.png)
 
 ---
 
@@ -99,6 +99,15 @@ This confirms the email reached the spam filter for all 25 targets before being 
 
 Extracted `attachment1696078057` and opened in Notepad. The full email headers 
 revealed what was actually going on:
+
+```
+Received: from kgsav.org (ppp-70-242-162-63.dsl.spfdmo.swbell.net [70.242.162.63])
+         by sacspam01.dot.ca.gov (Spam Firewall) with SMTP
+From: webmaster@python.org
+To: xxxxx@dot.ca.gov
+Date: Sat, 27 Nov 2004 03:35:30 UTC
+Subject: Delivery_failure_notice
+```
 
 ![Figure 4 — Attachment content in Notepad](../images/day5-attachmentdata.png)
 
