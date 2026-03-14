@@ -17,7 +17,7 @@ vs what's just normal Windows behavior.
 
 ## Tasks Completed
 - ✅ Checked OS information artifact — confirmed Windows XP SP3
-- ✅ Browsed file tree: Users → Jo → Desktop, Documents, Downloads, AppData
+- ✅ Browsed file tree: Documents and Settings → Jo → Desktop, My Documents, My Documents/Downloads, Local Settings
 - ✅ Went through the Deleted Files view — 1,690 deleted entries
 - ✅ Found sc10.bin.tmp sitting alone with valid timestamps while everything around it was wiped
 - ✅ Looked through the 85 Extension Mismatch results
@@ -102,7 +102,7 @@ a 3MB unknown binary doing there? But the bigger thing is every single file arou
 has timestamps of `0000-00-00 00:00:00`, completely wiped. This one file has perfectly 
 intact timestamps. That contrast is what makes it stand out. Either the wipe didn't 
 catch it or it was placed there after the wipe happened. Either way it's going on the 
-priority list for Day 5 analysis.
+priority list for Day 5 binary analysis.
 
 ![Figure 2 — sc10.bin.tmp among wiped deleted files](../images/day02-deleted-sc10.png)
 
@@ -117,7 +117,7 @@ priority list for Day 5 analysis.
 
 The sheer number of wiped timestamps points to someone deliberately trying to remove 
 traces of when files were created or accessed. Not accidental. Will keep the files 
-with intact timestamps as reference points for the upcoming days.
+with intact timestamps as reference points for the timeline on Day 9.
 
 ![Figure 3 — Deleted files showing mixed timestamp states](../images/day02-deleted-timestamps.png)
 
@@ -142,7 +142,7 @@ with intact timestamps as reference points for the upcoming days.
 
 A normal user doesn't rename 85 documents to look like system files. Some of these 
 could be legit Windows/Office temp behavior but 85 is way too many to ignore. Need to 
-open each one and see what's actually inside — that's Day 3 work.
+open each one and see what's actually inside — that's Day 6 work.
 
 ![Figure 4 — Extension Mismatch Detected results](../images/day02-extension-mismatch.png)
 
@@ -152,7 +152,7 @@ open each one and see what's actually inside — that's Day 3 work.
 
 Nothing to deep-dive yet but flagging it. Autopsy's entropy scan picked up 7 files 
 as encrypted and 3 more as suspected. On a work laptop that's worth looking into — 
-could be nothing, could be data being prepped for exfiltration.
+could be nothing, could be data being prepped for exfiltration. Will look at this in Day 7 during binary analysis.
 
 ---
 
@@ -160,7 +160,7 @@ could be nothing, could be data being prepped for exfiltration.
 
 - Recent Documents had 21 entries, mostly US Patent documents — matches Jo's role so nothing jumps out yet
 - Web History has 3,984 entries but some IE sessions had no title and no URL at all — blank entries like that can mean InPrivate browsing or someone cleared history but Autopsy still picked up the sessions
-- 26 web search terms — haven't gone through all of them.
+- 26 web search terms — haven't gone through all of them, that's Day 4
 
 Not calling these suspicious yet. Will make more sense once I compare against the 
 event logs and network traffic later on.
@@ -188,7 +188,14 @@ event logs and network traffic later on.
   .tmp is deliberate
 - Zeroing timestamps takes deliberate effort, normal deletion doesn't do that
 - Not everything suspicious on day 2 will turn out to be evidence — some of this will 
-  get explained away by upcoming days once the event logs are in
+  get explained away by Day 6 once the event logs are in
 
 ---
 
+## Next Steps (Day 3)
+- Start building the Suspicious Files Table with proper UTC timestamps
+- Look at sc10.bin.tmp in the Hex tab — see if anything readable is in there
+- Browse Jo's Desktop, My Documents, and Downloads folders in detail
+- Check Installed Programs for anything unusual
+- Extension mismatches and USB devices will be covered in Day 6
+- Email artifacts will be covered in Day 4 and 5
