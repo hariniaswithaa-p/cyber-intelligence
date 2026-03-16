@@ -36,7 +36,7 @@ NOTE: Jack - temporary bypass: use header "X-Dev-Access: yes"
 
 So there's a hidden developer backdoor sitting right there in the source. `X-Dev-Access: yes` is a custom HTTP header that was left in as a temporary bypass — and never removed. That's our way in.
 
-![decoded text](..images/ROT13-decode.png)
+![decoded text](../images/ROT13-decode.png)
 
 ---
 
@@ -44,11 +44,11 @@ So there's a hidden developer backdoor sitting right there in the source. `X-Dev
 
 Now I needed to send a login request with that header attached. I tried logging in normally first — "Invalid credentials" as expected.
 
-![login failure](..images/invalid-credentials.png)
+![login failure](../images/invalid-credentials.png)
 
 So I opened DevTools → Network tab → submitted the login again → right-clicked the login request → Copy → Copy as cURL (cmd).
 
-![DevTools network tab](..images/copy-URL.png)
+![DevTools network tab](../images/copy-URL.png)
 
 Opened CMD (`Win + R → cmd`), pasted the curl command, and added the bypass header at the end:
 
@@ -58,7 +58,7 @@ Opened CMD (`Win + R → cmd`), pasted the curl command, and added the bypass he
 
 Ran it, and the server handed back the flag in the response.
 
-![cmd showing the curl command and the flag in the response](..images/cmd-response.png)
+![cmd showing the curl command and the flag in the response](../images/cmd-response.png)
 
 ---
 
