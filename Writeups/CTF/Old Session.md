@@ -16,9 +16,9 @@ The challenge talks about session timeout misconfigurations. If sessions never e
 
 There's a link to a social media site. I hit the login page and tried random credentials and got in — the site registered me as a new user. The challenge hints mentioned the web inspector and cookies, so that's where I went.
 
-> 📸 *[Screenshot 1: login page]*
+![login page](../images/loginpage.png)
 
-> 📸 *[Screenshot 2: registering an account]*
+![register](../images/register.png)
 
 ---
 
@@ -30,7 +30,7 @@ After logging in, the homepage showed some comments. One of them from `mary_jone
 
 That's a hint right there. I added `/sessions` to the URL and it dropped me onto a page listing all active session cookies — including one for **admin**.
 
-> 📸 *[Screenshot 3: homepage with comments]*
+![homepage](../images/homepage.png)
 
 ---
 
@@ -38,13 +38,13 @@ That's a hint right there. I added `/sessions` to the URL and it dropped me onto
 
 I opened DevTools → Application → Cookies and could see my own session cookie. I copied the admin session value from the `/sessions` page, went back to the cookies panel, and replaced my session value with the admin one.
 
-> 📸 *[Screenshot 4: DevTools showing the session cookie]*
+ ![session cookie](../images/cookies.png)
 
-> 📸 *[Screenshot 5: /sessions page showing admin and my session]*
+![admin and my session](../images/adminsession.png)
 
 Refreshed the page — now logged in as admin, and the flag was sitting right there on the homepage.
 
-> 📸 *[Screenshot 6: logged in as admin with the flag]*
+![logged in as admin with the flag](../images/flag.png)
 
 ---
 
