@@ -22,7 +22,7 @@ The simplest approach — drag and drop the file into CyberChef and add a **From
 
 That didn't look like the rest of the garbage. After a quick search, that's actually part of a JPEG image header and footer — the binary data was encoding an image.
 
-> 📸 *[Screenshot 1: CyberChef From Binary output showing the suspicious string]
+![binary decode](../images/binaryop.png)
 
 ---
 
@@ -30,7 +30,7 @@ That didn't look like the rest of the garbage. After a quick search, that's actu
 
 So I added **Render Image** to the recipe right after From Binary. CyberChef rendered it directly in the output — and there was the flag sitting in the image.
 
-> 📸 *[Screenshot 2: CyberChef rendering the image with the flag visible]*
+![image render](../images/imagerender.png)
 
 ---
 
