@@ -18,7 +18,7 @@ Two files, one image, one encrypted message. The image is suspicious — why giv
 
 I ran the image through an online metadata viewer and hit the **Comment** field — a massive wall of hex that clearly wasn't a normal camera comment.
 
-> 📸 *[Screenshot 1: metadata viewer showing the hex in the Comment field]*
+![hex in the Comment field](../images/commentmeta.png)
 
 ---
 
@@ -26,7 +26,7 @@ I ran the image through an online metadata viewer and hit the **Comment** field 
 
 I copied the hex string into CyberChef and used the **Magic** recipe to let it figure out the encoding automatically. It decoded to a **RSA private key** — a full PEM-formatted private key just sitting there in the image metadata.
 
-> 📸 *[Screenshot 2: CyberChef Magic recipe output showing the private key]*
+![CyberChef Magic recipe output showing the private key](..images/magicop.png)
 
 ---
 
@@ -36,7 +36,7 @@ Now I had the private key and the `.enc` file. I loaded both into CyberChef usin
 
 I usually go with Raw for CTF RSA challenges first, but it didn't work here. So I tried the other schemes — turned out the author used **RSAES-PKCS1-V1_5**. Switched to that and the flag came out clean.
 
-> 📸 *[Screenshot 3: CyberChef RSA Decrypt with the flag in the output]*
+![ CyberChef RSA Decrypt with the flag in the output](../images/RSAdecrypt.png)
 
 ---
 
