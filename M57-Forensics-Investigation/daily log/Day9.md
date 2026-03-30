@@ -1,8 +1,11 @@
 # Day 9 — 27 March 2026
 
 **Internship:** RISE — Cyber Forensics & Threat Intelligence
+
 **Project:** M57 Digital Forensics Investigation
+
 **Phase:** Phase 2 — Windows/System32/config Analysis
+
 **Status:** ✅ Complete
 
 ---
