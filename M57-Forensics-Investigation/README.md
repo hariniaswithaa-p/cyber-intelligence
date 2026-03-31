@@ -4,9 +4,9 @@
 > RISE Internship — Cyber Forensics & Threat Intelligence
 
 forensic investigation of the M57 insider threat case (Jo's laptop).  
-Tools: Autopsy · Wireshark · Volatility · Kali Linux
+Tools: Autopsy · Kali Linuxn · VirusTotal · MITRE ATT&CK framework
 
-📅 Status: In Progress 
+📅 Status: Completed
 
 ---
 
