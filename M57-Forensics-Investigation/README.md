@@ -13,7 +13,7 @@ This repository contains a detailed digital forensic investigation conducted to 
 
 ## 📂 Report
 
-👉 [Download Full Investigation Report](M57-Forensics-Investigation/Final_Report.pdf)
+👉 [Download Full Investigation Report](/M57-Forensics-Investigation/Final_Report.pdf)
 
 ## 🔍 Key Findings
 
